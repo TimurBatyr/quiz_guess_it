@@ -59,12 +59,12 @@ all_questions.shuffle.each do |question_data|
       mode: 'a')
   else
     puts "Not correct!"
-    puts "Right answer: #{correct_answer}"
+    puts "Correct answer: #{correct_answer}"
     incorrect_answer_count += 1
 
     File.write(
       file_name, 
-      "Incorrect answer! Right answer: #{correct_answer}",
+      "Incorrect answer! Correct answer: #{correct_answer}",
       mode: 'a')
   end
 end
